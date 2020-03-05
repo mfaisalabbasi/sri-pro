@@ -1,38 +1,116 @@
-.App {
+/* primary stuff */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container-full {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.container {
+  width: 90%;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Navigation Area */
+
+.header {
+  width: 90%;
+
+  height: 50px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 20%;
+  height: 100%;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo-file {
+  width: 100%;
+  height: 90%;
+  margin-top: 6px;
+}
+.menu {
+  width: 80%;
+  background-color: #272068;
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-ul {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+li {
+  list-style: none;
+  padding: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.slider {
+  margin-top: 20px;
+  height: 300px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content {
+  width: 80%;
+  height: 400px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.single-post {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.post-image {
+  width: 30%;
+  height: 100%;
+}
+.post-content {
+  width: 70%;
+  height: 100%;
+}
+.post-content > p {
+  padding: 20px;
+}
+.post-content > p > button {
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+}
+.post-content > p > button:hover {
+  background-color: red;
+  color: #fff;
+}
+.latest-posts {
+  margin-top: 5px;
+  width: 100%;
+  height: 35%;
+  display: flex;
+  justify-content: space-between;
+}
+.lt-post {
+  width: 33%;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  display: flex;
+}
+.lt-image {
+  width: 30%;
+}
+.lt-content {
+  width: 70%;
 }
