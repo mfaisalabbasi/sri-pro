@@ -1,12 +1,12 @@
 import React, { Fragment } from 'react';
-import banner from '../img/banner.gif';
+import banner from '../img/banner.jpg';
 
 const Slider = () => {
   return (
     <Fragment>
       <div className='web-head'>
         <div className='head'>
-          <h1>STRAITAGIC RESEARCH INSTITUE</h1>
+          <h1>STRATEGIC RESEARCH INSTITUTE</h1>
         </div>
       </div>
       <div className='slider'>

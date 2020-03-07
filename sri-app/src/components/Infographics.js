@@ -8,9 +8,7 @@ import info3 from '../img/info3.jpg';
 const Infographics = () => {
   return (
     <div className='info'>
-      <h1 style={{ color: 'white', textAlign: 'center', margin: '5px' }}>
-        INFOGRAPHICS
-      </h1>
+      <h1 className='info-head'>INFOGRAPHICS</h1>
       <div className='slide-area'>
         <AwesomeSlider>
           <div data-src={info2} />

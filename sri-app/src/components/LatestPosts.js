@@ -11,7 +11,11 @@ const LatestPosts = () => {
           <img src={fl1} alt='lates-posts' width='100%' height='100%' />
         </div>
         <div className='lt-content'>
-          <h5>Hellow world welcome Here, If You are Looking for ...</h5>
+          <h6>
+            hellow world welcome lere, If You are looking for hellow world
+            welcome lere, If You are looking for hellow world welcome lere, If
+            You are looking for
+          </h6>
         </div>
       </div>
       <div className='lt-post'>
@@ -19,7 +23,11 @@ const LatestPosts = () => {
           <img src={fl2} alt='lates-posts' width='100%' height='100%' />
         </div>
         <div className='lt-content'>
-          <h5>Hellow world welcome Here, If You are Looking for ...</h5>
+          <h6>
+            hellow world welcome lere, If You are looking for hellow world
+            welcome lere, If You are looking for hellow world welcome lere, If
+            You are looking for
+          </h6>
         </div>
       </div>
       <div className='lt-post'>
@@ -27,7 +35,11 @@ const LatestPosts = () => {
           <img src={fl3} alt='lates-posts' width='100%' height='100%' />
         </div>
         <div className='lt-content'>
-          <h5>Hellow world welcome Here, If You are Looking for ...</h5>
+          <h6>
+            hellow world welcome lere, If You are looking for hellow world
+            welcome lere, If You are looking for hellow world welcome lere, If
+            You are looking for
+          </h6>
         </div>
       </div>
     </div>
