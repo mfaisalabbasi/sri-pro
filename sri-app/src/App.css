@@ -214,6 +214,84 @@ img {
   margin-right: auto;
 }
 
+/* Single Post & Page Area */
+.single {
+  margin-top: 30px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+}
+
+.single-section {
+  width: 65%;
+  height: 100%;
+  padding: 10px;
+}
+.img-sec {
+  width: 100%;
+  height: 50%;
+}
+.data-sec {
+  width: 100%;
+  height: 50%;
+  margin-top: 20px;
+}
+.pad {
+  padding-left: 7px;
+}
+.recent-section {
+  width: 30%;
+  height: 100%;
+}
+.recent-data {
+  padding: 10px;
+  width: 85%;
+  margin-left: auto;
+}
+
+.recent-img {
+  margin-top: 10px;
+  cursor: pointer;
+}
+/* Comment Form */
+.comment {
+  width: 100%;
+
+  padding: 5px;
+  background-color: #fff;
+}
+form {
+  width: 100%;
+}
+.input-group {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+textarea {
+  width: 100%;
+  border-radius: 5px;
+}
+input {
+  width: 30%;
+  height: 30px;
+}
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #0274be;
+}
+
 /* Footer section */
 
 .footer {
@@ -439,6 +517,29 @@ img {
 @media only screen and (max-width: 350px) {
   .info {
     height: 260px;
+  }
+}
+/* Media queries for Single post or Page */
+@media only screen and (max-width: 650px) {
+  .single {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .single-section {
+    width: 100%;
+  }
+
+  .recent-section {
+    width: 100%;
+  }
+  .recent-data {
+    padding: 10px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 /* Media queries for footer */

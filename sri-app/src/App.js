@@ -7,6 +7,7 @@ import Content from './components/Content';
 import Videos from './components/Videos';
 import Infographics from './components/Infographics';
 import Footer from './components/Footer';
+import Single from './components/Single';
 function App() {
   return (
     <div className='container-full'>
@@ -16,6 +17,7 @@ function App() {
       <Videos />
       <Infographics />
       <Footer />
+      <Single />
     </div>
   );
 }

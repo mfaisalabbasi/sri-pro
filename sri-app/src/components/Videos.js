@@ -9,7 +9,7 @@ const Videos = () => {
       <div className='container'>
         <div className='video-section'>
           <div className='vid-heading'>
-            <h3>SRI BROADCAT</h3>
+            <h3>SRI BROADCAST</h3>
           </div>
           <div className='video-sec'>
             <div className='vid'>
