@@ -196,10 +196,11 @@ img {
 
 .info {
   width: 100%;
-  height: 700px;
   margin-top: 20px;
-
   background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 .info-head {
   color: white;
@@ -209,11 +210,21 @@ img {
 
 .slide-area {
   width: 60%;
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  height: 80%;
 }
+.latest-info {
+  width: 30%;
+  height: 80%;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.single-info {
+  width: 100%;
+  height: 47%;
+  margin-top: 0px;
+}
 /* Single Post & Page Area */
 .single {
   margin-top: 30px;
