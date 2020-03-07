@@ -3,15 +3,19 @@
   margin: 0px;
   padding: 0px;
 }
-
+body {
+  background-color: #ebecf0;
+}
+img {
+  border-radius: 2px;
+}
 .container-full {
   width: 100%;
-  margin-top: 10px;
 }
 
 .container {
   width: 90%;
-
+  background-color: #fff;
   margin-left: auto;
   margin-right: auto;
 }
@@ -36,6 +40,7 @@
   width: 100%;
   height: 90%;
   margin-top: 6px;
+  cursor: pointer;
 }
 .menu {
   width: 80%;
@@ -51,29 +56,47 @@
   justify-content: space-around;
   flex-wrap: wrap;
 }
-li {
+.nav-ul li {
   list-style: none;
   padding: 15px;
+  cursor: pointer;
 }
-
+/* main head and background slide */
+.web-head {
+  width: 100%;
+  text-align: center;
+  margin-top: 25px;
+  color: #272068;
+}
+.head {
+  background-color: white;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
 .slider {
-  margin-top: 20px;
+  margin-top: 5px;
   height: 300px;
 }
 
+/* Content section Showing single latest and highlight 3 single post */
 .content {
   width: 80%;
-  height: 400px;
+  height: 300px;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
 }
 
+/* Top section of content where we will show single post image and content */
 .single-post {
   width: 100%;
-  height: 60%;
+  height: 50%;
   display: flex;
   flex-wrap: wrap;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
 }
 .post-image {
   width: 30%;
@@ -82,35 +105,193 @@ li {
 .post-content {
   width: 70%;
   height: 100%;
+  font-size: 13px;
 }
 .post-content > p {
-  padding: 20px;
+  padding: 10px;
 }
 .post-content > p > button {
   padding: 5px;
   border: none;
   border-radius: 3px;
+  border: 1px solid rgb(201, 209, 212);
+  margin: 5px;
+  cursor: pointer;
 }
 .post-content > p > button:hover {
   background-color: red;
   color: #fff;
 }
+
+/* Lower section of content where we will show 3 latest posts */
+
 .latest-posts {
-  margin-top: 5px;
   width: 100%;
-  height: 35%;
+  height: 40%;
   display: flex;
   justify-content: space-between;
 }
 .lt-post {
+  height: 100%;
   width: 33%;
-  margin-bottom: 5px;
-  margin-top: 10px;
+
   display: flex;
 }
 .lt-image {
-  width: 30%;
+  height: 80%;
+  width: 40%;
+  margin-top: auto;
+  margin-bottom: auto;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
 }
 .lt-content {
-  width: 70%;
+  height: 80%;
+  width: 60%;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 5px;
+  cursor: pointer;
+}
+/* Videos broadCasting sections */
+.vid-wrap {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.vid-heading {
+  text-align: center;
+  margin-top: 10px;
+}
+.vid-heading > h3 {
+  color: rgb(117, 130, 141);
+  padding: 5px;
+}
+
+.video-sec {
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.vid {
+  width: 28%;
+  height: 200px;
+  transition: all 1s;
+  cursor: pointer;
+}
+.vid:hover {
+  transform: scale(1.1);
+}
+
+/* Infographics sections */
+
+.info {
+  width: 100%;
+  height: 700px;
+  margin-top: 20px;
+
+  background-color: gray;
+}
+.slide-area {
+  width: 60%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Footer section */
+
+.footer {
+  width: 100%;
+
+  background-color: #d3d3d2;
+  display: flex;
+  justify-content: space-around;
+}
+.foot-section {
+  width: 18%;
+  height: 200px;
+}
+
+.foot-content {
+  margin: 20px;
+
+  text-align: center;
+}
+
+.foot-content > ul > li {
+  list-style: none;
+  font-size: 12px;
+  padding-top: 10px;
+  color: #072f5f;
+  cursor: pointer;
+}
+.social {
+  display: flex;
+  cursor: pointer;
+}
+
+/* Media Queries section */
+
+/* Media queries for infographics */
+@media only screen and (max-width: 1024px) {
+  .info {
+    height: 480px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .info {
+    height: 430px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .info {
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .info {
+    height: 360px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .info {
+    height: 320px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .info {
+    height: 290px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .info {
+    height: 260px;
+  }
+}
+/* Media queries for footer */
+
+@media only screen and (max-width: 700px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .foot-section {
+    width: 50%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }

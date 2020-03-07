@@ -8,7 +8,7 @@ const SinglePost = () => {
       </div>
       <div className='post-content'>
         <p>
-          <h1>Pakistan view on kashmir</h1>
+          <h2 style={{ marginBottom: '10px' }}>Pakistan view on kashmir</h2>
           Hellow world how are you doing today, we came with lates news about
           indian occupied kashmiHellow world how are you doing today, we came
           with lates news about indian occupied kashmirr Hellow world how are
