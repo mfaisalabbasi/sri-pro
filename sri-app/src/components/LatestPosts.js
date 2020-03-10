@@ -1,9 +1,27 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import fl1 from '../img/fl1.jpg';
 import fl2 from '../img/fl2.jpg';
 import fl3 from '../img/fl3.jpg';
 
 const LatestPosts = () => {
+  //Fetching Latest Posts for recent posts section
+  const [all, setall] = useState({
+    loading: true,
+    posts: []
+  });
+
+  const fetchData = async () => {
+    const req = await fetch('http://localhost:5000/latest');
+    const res = await req.json();
+    setall({
+      loading: false,
+      posts: res
+    });
+    console.log(res);
+  };
+  useEffect(() => {
+    fetchData();
+  }, []);
   return (
     <div className='latest-posts'>
       <div className='lt-post'>

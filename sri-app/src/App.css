@@ -46,6 +46,7 @@ img {
 .menu {
   width: 80%;
   background-color: #272068;
+
   color: #fff;
 }
 
@@ -107,19 +108,22 @@ img {
   width: 70%;
   height: 100%;
   font-size: 13px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .post-content > p {
   padding: 10px;
 }
-.post-content > p > button {
-  padding: 5px;
+button {
+  padding: 2px;
   border: none;
   border-radius: 3px;
   border: 1px solid rgb(201, 209, 212);
   margin: 5px;
   cursor: pointer;
 }
-.post-content > p > button:hover {
+button:hover {
   background-color: red;
   color: #fff;
 }
@@ -197,13 +201,19 @@ img {
 .info {
   width: 100%;
   margin-top: 20px;
+  height: 600px;
   background-color: gray;
+  background-image: linear-gradient(
+    to right,
+    rgb(205, 123, 238),
+    rgb(116, 121, 231)
+  );
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 .info-head {
-  color: white;
+  color: #272068;
   text-align: center;
   padding-top: 10px;
 }
@@ -488,46 +498,29 @@ button {
 /* Media queries for infographics */
 @media only screen and (max-width: 1024px) {
   .info {
-    height: 480px;
+    width: 100%;
+    margin-top: 20px;
+    height: 450px;
   }
-}
-@media only screen and (max-width: 900px) {
-  .info {
-    height: 430px;
+
+  .slide-area {
+    width: 60%;
+    height: 80%;
   }
 }
 
 @media only screen and (max-width: 850px) {
   .info {
-    height: 400px;
+    height: auto;
   }
-}
-
-@media only screen and (max-width: 750px) {
-  .info {
-    height: 360px;
+  .slide-area {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 95%;
+    height: 100%;
   }
-  .info-head {
-    color: white;
-    text-align: center;
-    margin-top: 10px;
-    font-size: 15px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .info {
-    height: 320px;
-  }
-}
-@media only screen and (max-width: 450px) {
-  .info {
-    height: 290px;
-  }
-}
-@media only screen and (max-width: 350px) {
-  .info {
-    height: 260px;
+  .latest-info {
+    display: none;
   }
 }
 /* Media queries for Single post or Page */
