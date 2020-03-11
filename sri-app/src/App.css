@@ -15,7 +15,9 @@ img {
 .container-full {
   width: 100%;
 }
-
+p {
+  font-family: 'PT Sans Narrow', sans-serif;
+}
 .container {
   width: 90%;
   background-color: #fff;
@@ -85,7 +87,7 @@ img {
 /* Content section Showing single latest and highlight 3 single post */
 .content {
   width: 80%;
-  height: 300px;
+  height: auto;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
@@ -109,7 +111,8 @@ img {
   height: 100%;
   font-size: 13px;
   overflow: hidden;
-  text-overflow: ellipsis;
+
+  white-space: pre-wrap;
   white-space: nowrap;
 }
 .post-content > p {
@@ -127,6 +130,13 @@ button:hover {
   background-color: red;
   color: #fff;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: red;
+}
 
 /* Lower section of content where we will show 3 latest posts */
 
@@ -134,17 +144,17 @@ button:hover {
   width: 100%;
   height: 40%;
   display: flex;
-  justify-content: space-between;
+
+  justify-content: space-around;
 }
 .lt-post {
-  height: 100%;
   width: 33%;
 
   display: flex;
 }
 .lt-image {
   height: 80%;
-  width: 40%;
+  width: 100%;
   margin-top: auto;
   margin-bottom: auto;
   cursor: pointer;
@@ -154,7 +164,7 @@ button:hover {
 }
 .lt-content {
   height: 80%;
-  width: 60%;
+  width: 100%;
   margin-top: auto;
   margin-bottom: auto;
   padding-top: 10px;
@@ -263,6 +273,7 @@ button:hover {
 }
 .pad {
   padding-left: 7px;
+  white-space: pre-wrap;
 }
 .recent-section {
   width: 30%;

@@ -1,6 +1,6 @@
 import React from 'react';
-import SinglePost from './SinglePost';
-import LatestPosts from './LatestPosts';
+import SinglePost from './subcomponents/SinglePost';
+import LatestPosts from './subcomponents/LatestPosts';
 
 const Content = () => {
   return (

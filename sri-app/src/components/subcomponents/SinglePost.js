@@ -18,17 +18,23 @@ const SinglePost = () => {
 
   useEffect(() => {
     fetchData();
-  }, [fetchData]);
+  }, []);
 
   const { _id, title, image, description } = article.post;
+
   return (
     <div className='single-post'>
       <div className='post-image'>
-        <img src={image} alt='Posts thumnail' width='100%' height='100%' />
+        <Link to={`/single/${_id}`}>
+          {' '}
+          <img src={image} alt='Posts thumnail' width='100%' height='100%' />
+        </Link>
       </div>
       <div className='post-content'>
         <p>
-          <h2 style={{ marginBottom: '10px' }}>{title}</h2>
+          <Link to={`/single/${_id}`}>
+            <h2 style={{ marginBottom: '10px' }}>{title}</h2>
+          </Link>
           {description}
           <br />
           <Link to={`/single/${_id}`}>

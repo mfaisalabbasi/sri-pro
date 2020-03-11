@@ -5,6 +5,8 @@ const db = require('./database/db');
 var cors = require('cors');
 const article = require('./routes/article');
 const infographics = require('./routes/infographics');
+const videos = require('./routes/videos');
+
 // Database connection
 db();
 app.use(cors());
@@ -13,6 +15,7 @@ app.use(express.static('public'));
 
 app.use('/', article);
 app.use('/infographics', infographics);
+app.use('/videos', videos);
 
 // app.get('/', (req, res) => {
 //   res.status(200).json('welcome to sri community');

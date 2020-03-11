@@ -36,7 +36,7 @@ let upload = multer({
 router.post('/', [upload.single('infographic')], async (req, res) => {
   const url = req.protocol + '://' + req.get('host');
   const data = {
-    Infographic: url + '/public/infographics/' + req.file.filename
+    Infographic: url + '/infographics/' + req.file.filename
   };
   try {
     const uploadinfo = new Infographics(data);
@@ -55,6 +55,22 @@ router.get('/all', async (req, res) => {
     const infos = await Infographics.find().sort({
       $natural: -1
     });
+    res.status(200).send(infos);
+  } catch (err) {
+    console.log(err);
+  }
+});
+
+//getting All infographics
+//get method
+
+router.get('/recent', async (req, res) => {
+  try {
+    const infos = await Infographics.find()
+      .limit(2)
+      .sort({
+        $natural: -1
+      });
     res.status(200).send(infos);
   } catch (err) {
     console.log(err);
